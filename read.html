@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bb.css">
+    <script>
+        function getname() {
+            var n = document.getElementById("name").value;
+            document.getElementById("result").innerHTML = n;
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table class="br">
+            <tr>
+                <td>enter your name</td>
+                <td><input type="text" class="form-control" id="name" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" class=" btn btn-danger " onclick="getname(); ">submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="result"></p>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
