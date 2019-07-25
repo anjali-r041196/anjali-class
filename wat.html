@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+        function addn(x, y) {
+            var e = x + y;
+            return e;
+        }
+
+        function muln(x, y) {
+            var e = x * y;
+            return e;
+        }
+
+        function subn(x, y) {
+            var e = x - y;
+            return e;
+        }
+
+        function divn(x, y) {
+            var e = x / y;
+            return e;
+        }
+
+        function getn() {
+            var n1 = document.getElementById("na1").value;
+            var a = parseInt(n1);
+            var n2 = document.getElementById("na2").value;
+            var b = parseInt(n2);
+            var n3 = document.getElementById("funn").value;
+
+            if (n3 == "add") {
+                var n4 = addn(a, b);
+                document.getElementById("result").innerHTML = n4;
+            } else {
+                if (n3 == "mul") {
+                    var n4 = muln(a, b);
+                } else if (n3 == "sub") {
+                    var n4 = subn(a, b);
+                    document.getElementById("result").innerHTML = n4;
+                } else {
+                    var n4 = divn(a, b);
+                }
+            }
+            document.getElementById("result").innerHTML = n4;
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <table class="table">
+            <tr>
+                <td>no1</td>
+                <td>
+                    <input type="text" class="form-control" id="na1" /></td>
+            </tr>
+            <tr>
+                <td>no2</td>
+                <td>
+                    <input type="text" class="form-control " id="na2" /></td>
+            </tr>
+            <tr>
+                <td>fun</td>
+                <td><select id="funn" onchange="getn()">
+                    <option value="">select operation</option>
+                        <option value="add">add</option>
+                        <option value="mul">mul</option>
+                        <option value="sub">sub</option>
+                        <option value="div">div</option>
+                        
+                    </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button type="button" class="btn btn-warning ">submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="result"></p>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
