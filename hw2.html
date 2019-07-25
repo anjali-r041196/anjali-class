@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+       function getnum()
+           {
+var n1=document.getElementById("name1").value;
+var n2=document.getElementById("name2").value;
+if(n1>n2)
+{
+    document.getElementById("result").innerHTML=n1;
+}
+else
+{
+    document.getElementById("result").innerHTML=n2;  
+}
+           }
+       
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+                <tr>
+                    <td>enter the first number</td>
+                    <td><input type="text"  id="name1"></td>
+                </tr>
+                <tr>
+                        <td>enter the second number</td>
+                        <td><input type="text"  id="name2"></td>
+                    </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" class="btn btn-danger" onclick="getnum();">submit</button></td>
+                </tr>
+                <tr><td><p id="result"></p></td></tr>
+            </table>
+        </form>
+</body>
+</html>
