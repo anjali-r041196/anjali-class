@@ -1,4 +1,5 @@
 .br {
-    border: 5px solid black;
-    margin-top: 100px ;
+    border : 5px solid black;
+    padding: 100px;
+    margin-top: 10px ;
 }
